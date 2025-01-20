@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="relatorio.css">
+    <title>Relatório de Inspeção Técnica</title>
+</head>
+<body>
+    <div class="container">
+        <div class="titulo">
+            <img src="Imagem do WhatsApp de 2025-01-15 à(s) 14.27.30_436a2eff.jpg" alt="logo" style="width: 100px;">
+            <h1>RELATÓRIO DE INSPEÇÃO TÉCNICA</h1>
+        </div>
+        <div class="header">
+            <p><strong>Data de Emissão:</strong> <span id="data-emissao"></span></p>
+            <p><strong>Data de Validade:</strong> <span id="data-validade"></span></p>
+        </div>
+        
+        <p>O presente documento é relativo a inspeção técnica de segurança em veículo conforme NBR 14040, INS DTE-006 e Portaria 1706, Art4°, Item IV de 27 de janeiro de 2003 do DER-MG. Com VALIDADE DE 12 MÊS (ES)</p>
+
+        <h2>Dados do Proprietário</h2>
+        <table>
+            <tr>
+                <td><strong>Nome:</strong></td>
+                <td id="nome-proprietario"></td>
+                <td><strong>CPF:</strong></td>
+                <td id="cpf-proprietario"></td>
+            </tr>
+            <tr>
+                <td><strong>Endereço:</strong></td>
+                <td id="endereco-proprietario"></td>
+                <td><strong>N°:</strong></td>
+                <td id="numero-proprietario"></td>
+            </tr>
+            <tr>
+                <td><strong>Bairro:</strong></td>
+                <td id="bairro-proprietario"></td>
+                <td><strong>CEP:</strong></td>
+                <td id="cep-proprietario"></td>
+            </tr>
+            <tr>
+                <td><strong>Cidade:</strong></td>
+                <td id="cidade-proprietario"></td>
+                <td><strong>Estado:</strong></td>
+                <td id="estado-proprietario"></td>
+            </tr>
+        </table>
+
+        <h2>Dados do Veículo Inspecionado</h2>
+        <table border="1" cellspacing="0" cellpadding="5" style="width: 100%; text-align: left; border-collapse: collapse;">
+            <tr>
+                <td><strong>Placa:</strong></td>
+                <td id="placa-veiculo"></td>
+                <td><strong>Nota Fiscal:</strong></td>
+                <td id="nota-fiscal"></td>
+                <td><strong>Chassi:</strong></td>
+                <td id="chassi-veiculo"></td>
+            </tr>
+            <tr>
+                <td><strong>Espécie/Tipo:</strong></td>
+                <td id="tipo-veiculo"></td>
+                <td><strong>Marca/Modelo:</strong></td>
+                <td id="marca-modelo"></td>
+                <td><strong>Combustível:</strong></td>
+                <td id="combustivel-veiculo"></td>
+            </tr>
+            <tr>
+                <td><strong>Ano de Fabricação:</strong></td>
+                <td id="ano-fabricacao"></td>
+                <td><strong>Ano Modelo:</strong></td>
+                <td id="ano-modelo"></td>
+                <td><strong>Capacidade:</strong></td>
+                <td id="capacidade-veiculo"></td>
+            </tr>
+            <tr>
+                <td><strong>Potência:</strong></td>
+                <td id="potencia-veiculo"></td>
+                <td><strong>Categoria:</strong></td>
+                <td id="categoria-veiculo"></td>
+                <td><strong>Cor:</strong></td>
+                <td id="cor-veiculo"></td>
+            </tr>
+        </table>        
+
+        <h2>Grupo de Itens Avaliados</h2>
+        <table>
+            <tr>
+                <td>1.0 IDENTIFICAÇÃO</td>
+                <td class="approved">APROVADO</td>
+                <td>2.0 EQUIPAMENTOS OBRIGATÓRIOS</td>
+                <td class="approved">APROVADO</td>
+            </tr>
+            <tr>
+                <td>3.0 BANCOS, PORTAS E VIDROS</td>
+                <td class="approved">APROVADO</td>
+                <td>4.0 SISTEMA ELÉTRICO – SINALIZAÇÃO</td>
+                <td class="approved">APROVADO</td>
+            </tr>
+            <tr>
+                <td>5.0 SISTEMA ELÉTRICO – ILUMINAÇÃO</td>
+                <td class="approved">APROVADO</td>
+                <td>6.0 ENSAIOS E TESTES NA LINHA INSP</td>
+                <td class="approved">APROVADO</td>
+            </tr>
+            <tr>
+                <td>7.0 PNEUS E RODAS</td>
+                <td class="approved">APROVADO</td>
+                <td>8.0 SISTEMA DE DIREÇÃO</td>
+                <td class="approved">APROVADO</td>
+            </tr>
+            <tr>
+                <td>9.0 SISTEMA DE SUSPENSÃO</td>
+                <td class="approved">APROVADO</td>
+                <td>10.0 SISTEMA DE FREIO</td>
+                <td class="approved">APROVADO</td>
+            </tr>
+            <tr>
+                <td>11.0 SISTEMA DE TRANSMISSÃO</td>
+                <td class="approved">APROVADO</td>
+                <td>12.0 MOTOR</td>
+                <td class="approved">APROVADO</td>
+            </tr>
+            <tr>
+                <td>13.0 CHASSI, CARROÇARIA E LATARIA</td>
+                <td class="approved">APROVADO</td>
+                <td>14.0 SISTEMA DE ARREFECIMENTO</td>
+                <td class="approved">APROVADO</td>
+            </tr>
+            <tr>
+                <td>15.0 SISTEMA DE ALIMENTAÇÃO</td>
+                <td class="approved">APROVADO</td>
+                <td>16.0 SISTEMA DE ESCAP. RUÍDO</td>
+                <td class="approved">APROVADO</td>
+            </tr>
+            <tr>
+                <td>17.0 SISTEMA ELÉTRICO</td>
+                <td class="approved">APROVADO</td>
+                <td>18.0 DIMENSÕES DO VEÍCULO</td>
+                <td class="approved">APROVADO</td>
+            </tr>
+        </table>
+        
+        <div class="resultado-box">
+            <div class="imagens-veiculo">
+                <img id="imagem-frente-relatorio" alt="Foto da Frente do Veículo">
+                <img id="imagem-traseira-relatorio" alt="Foto da Traseira do Veículo">
+            </div>            
+        </div>
+        <p>
+            <strong>RESULTADO:</strong><br>
+            O VEÍCULO ACIMA IDENTIFICADO FOI INSPECIONADO CONFORME DETERMINA A LEGISLAÇÃO DE TRÂNSITO VIGENTE NO PAÍS, 
+            SENDO CONSIDERADO APTO PARA TRAFEGAR PELAS VIAS PÚBLICAS.<br><br>
+            Encontra-se em adequadas condições de manutenção, preservação, segurança e conservação de suas características técnicas. 
+            Veículo não possui avarias na lataria.
+        </p>
+        <div class="assinaturas">
+            <div class="footer">
+                <p>RAFAEL MACHADO BORTONE</p>
+                <p>Engenheiro Mecânico</p>
+                <p>1418980951</p>
+            </div>
+            <div class="linha-assinatura">
+                <div class="assinatura-cliente">
+                    <div class="linha"></div>
+                    <span>Cliente</span>
+                </div>
+            </div>
+        </div>        
+        
+    <p>
+        Esta declaração relata as condições do veículo no ato da inspeção, sendo que não nos responsabilizamos por eventuais falhas ou modificações ocorridas após a mesma. Este relatório aplica-se somente ao veículo inspecionado. É proibida a reprodução parcial ou total deste relatório sem a permissão do cliente acima identificado
+        EVC VISTORIA VEICULAR CNPJ: 30.062.548/0001-27 OIC: 921
+        RODOVIA BR 040 – ÁGUA BRANCA – CONTAGEM – MG – CEP: 32.145-970 – TEL: 97194-7322
+        <br>
+        <bold>OBS: ESSE LAUDO DEVERÁ SER ULTILIZADO APENAS PARA A VISTÓRIA DA PREFEITURA.</bold>
+        </p>
+    <script src="relatorio.js"></script>
+</body>
+</html>

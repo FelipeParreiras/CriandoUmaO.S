@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Cadastro de Dados</title>
+</head>
+<body>
+    <!-- Formulário 1: Dados do Proprietário -->
+    <form id="form-proprietario">
+        <h1>Dados do Proprietário</h1>
+        <label for="nome-proprietario">NOME:</label>
+        <input type="text" name="nome-proprietario" id="nome-proprietario">
+        <br>
+        <label for="cpf-proprietario">CPF:</label>
+        <input type="text" name="cpf-proprietario" id="cpf-proprietario">
+        <br>
+        <label for="endereco-proprietario">ENDEREÇO:</label>
+        <input type="text" name="endereco-proprietario" id="endereco-proprietario">
+        <br>
+        <label for="numero-proprietario">N°:</label>
+        <input type="text" name="numero-proprietario" id="numero-proprietario">
+        <br>
+        <label for="complemento-proprietario">COMPLEMENTO:</label>
+        <input type="text" name="complemento-proprietario" id="complemento-proprietario">
+        <br>
+        <label for="bairro-proprietario">BAIRRO:</label>
+        <input type="text" name="bairro-proprietario" id="bairro-proprietario">
+        <br>
+        <label for="estado-proprietario">ESTADO:</label>
+        <input type="text" name="estado-proprietario" id="estado-proprietario">
+        <br>
+        <label for="cidade-proprietario">CIDADE:</label>
+        <input type="text" name="cidade-proprietario" id="cidade-proprietario">
+        <br>
+        <label for="cep-proprietario">CEP:</label>
+        <input type="text" name="cep-proprietario" id="cep-proprietario">
+        <br>
+        <input type="submit" value="Próximo">
+    </form>
+
+    <!-- Formulário 2: Dados do Veículo Inspecionado -->
+    <form id="form-veiculo">
+        <h1>Dados do Veículo Inspecionado</h1>
+        <label for="placa-veiculo">Placa:</label>
+        <input type="text" name="placa-veiculo" id="placa-veiculo">
+        <br>
+        <label for="nota-fiscal">N° Nota Fiscal:</label>
+        <input type="text" name="nota-fiscal" id="nota-fiscal">
+        <br>
+        <label for="chassi-veiculo">N° Chassi:</label>
+        <input type="text" name="chassi-veiculo" id="chassi-veiculo">
+        <br>
+        <label for="tipo-veiculo">Espécie/Tipo:</label>
+        <input type="text" name="tipo-veiculo" id="tipo-veiculo">
+        <br>
+        <label for="marca-modelo">Marca/Modelo:</label>
+        <input type="text" name="marca-modelo" id="marca-modelo">
+        <br>
+        <label for="combustivel-veiculo">Combustível:</label>
+        <input type="text" name="combustivel-veiculo" id="combustivel-veiculo">
+        <br>
+        <label for="ano-fabricacao">Ano de Fabricação:</label>
+        <input type="text" name="ano-fabricacao" id="ano-fabricacao">
+        <br>
+        <label for="ano-modelo">Ano Modelo:</label>
+        <input type="text" name="ano-modelo" id="ano-modelo">
+        <br>
+        <label for="capacidade-veiculo">Capacidade:</label>
+        <input type="text" name="capacidade-veiculo" id="capacidade-veiculo">
+        <br>
+        <label for="potencia-veiculo">Potência:</label>
+        <input type="text" name="potencia-veiculo" id="potencia-veiculo">
+        <br>
+        <label for="categoria-veiculo">Categoria:</label>
+        <input type="text" name="categoria-veiculo" id="categoria-veiculo">
+        <br>
+        <label for="cor-veiculo">Cor:</label>
+        <input type="text" name="cor-veiculo" id="cor-veiculo">
+        <br>
+        <input type="submit" value="Próximo">
+    </form>
+
+    <!-- Formulário 3: Dados do Cliente -->
+    <form id="form-cliente">
+        <h1>Dados do Cliente</h1>
+        <label for="nome-cliente">Nome:</label>
+        <input type="text" name="nome-cliente" id="nome-cliente">
+        <br>
+        <label for="cpf-cliente">CPF:</label>
+        <input type="text" name="cpf-cliente" id="cpf-cliente">
+        <br>
+        <label for="endereco-cliente">Endereço:</label>
+        <input type="text" name="endereco-cliente" id="endereco-cliente">
+        <br>
+        <label for="numero-cliente">N°:</label>
+        <input type="text" name="numero-cliente" id="numero-cliente">
+        <br>
+        <label for="complemento-cliente">Complemento:</label>
+        <input type="text" name="complemento-cliente" id="complemento-cliente">
+        <br>
+        <label for="bairro-cliente">Bairro:</label>
+        <input type="text" name="bairro-cliente" id="bairro-cliente">
+        <br>
+        <label for="estado-cliente">Estado:</label>
+        <input type="text" name="estado-cliente" id="estado-cliente">
+        <br>
+        <label for="cidade-cliente">Cidade:</label>
+        <input type="text" name="cidade-cliente" id="cidade-cliente">
+        <br>
+        <label for="cep-cliente">CEP:</label>
+        <input type="text" name="cep-cliente" id="cep-cliente">
+        <br>
+        <label for="telefone1-cliente">Telefone (31):</label>
+        <input type="text" name="telefone1-cliente" id="telefone1-cliente">
+        <br>
+        <label for="telefone2-cliente">Telefone (31):</label>
+        <input type="text" name="telefone2-cliente" id="telefone2-cliente">
+        <br>
+        <label for="cartao-cliente">Cartão Fidelidade:</label>
+        <input type="text" name="cartao-cliente" id="cartao-cliente">
+        <br>
+        <label for="condutor">Condutor:</label>
+        <input type="text" name="condutor" id="condutor" value="O MESMO" readonly>
+        <br>
+        <input type="submit" value="Proximo">
+    </form>
+    <form id="form-imagens">
+        <h1>Upload de Imagens do Veículo</h1>
+        <label for="imagem-frente">Foto da Frente:</label>
+        <input type="file" id="imagem-frente" accept="image/*">
+        <br><br>
+        <label for="imagem-traseira">Foto da Traseira:</label>
+        <input type="file" id="imagem-traseira" accept="image/*">
+        <br><br>
+        <input type="submit" value="Finalizar">
+    </form>
+</body>
+<script src="js.js"></script>
+</html>

@@ -1,0 +1,155 @@
+/* Configuração básica para impressão em A4 */
+@page {
+    size: A4;
+    margin: 100mm;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* Remove cor de fundo para impressão */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 100%; /* Ajustar largura ao máximo permitido */
+    margin: 0 auto;
+    background: #fff;
+    padding: 15px; /* Reduzido para caber na folha */
+    border-radius: 5px;
+    box-shadow: none; /* Removido para impressão */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 18px; /* Reduzido para economizar espaço */
+    margin-bottom: 10px; /* Ajustado */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px; /* Reduzido */
+    font-size: 12px; /* Reduzido */
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 8px; /* Reduzido */
+    text-align: left;
+}
+.titulo{
+    display: flex; /* Define layout flexbox para colocar os itens lado a lado */
+    align-items: center; /* Alinha verticalmente o logotipo e o título */
+    justify-content: center; /* Alinha os itens à esquerda */
+    gap: 20px; /* Espaçamento horizontal entre os itens */
+}
+
+.titulo img {
+    max-width: 100px; /* Define largura máxima do logotipo */
+    height: auto; /* Mantém a proporção do logotipo */
+}
+
+.titulo h1 {
+    font-size: 24px; /* Ajusta o tamanho do título */
+    margin: 0; /* Remove margem adicional */
+    color: #333; /* Cor do texto */
+}
+
+
+.header, .footer {
+    text-align: center;
+    margin-top: 10px; /* Reduzido */
+}
+
+.approved {
+    text-align: center;
+    font-weight: bold;
+}
+
+.resultado-box {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #000;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.resultado-box strong {
+    font-size: 16px;
+    color: #333;
+}
+
+.resultado-box .imagens-veiculo {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.resultado-box .imagens-veiculo img {
+    max-width: 45%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.assinaturas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px; /* Reduzido */
+    padding: 10px; /* Reduzido */
+    border-top: 1px solid #000;
+}
+
+.footer p {
+    margin: 2px 0; /* Compactado */
+    margin-top: 20px; /* Reduzido */
+    font-size: 12px; /* Reduzido */
+}
+
+
+.assinatura-cliente {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    margin-top: 20px; /* Reduzido */
+}
+
+.assinatura-cliente .linha {
+    width: 300px;
+    border-top: 1px solid #000;
+    margin-bottom: 5px;
+}
+
+.assinatura-cliente span {
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px; /* Reduzido */
+}
+
+.imagens-veiculo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.imagens-veiculo img {
+    max-width: 45%; /* Cada imagem ocupa no máximo 45% da largura */
+    height: auto; /* Mantém a proporção */
+    border: 1px solid #ccc; /* Borda ao redor das imagens */
+    border-radius: 5px; /* Borda arredondada */
+    object-fit: contain; /* Garante que a imagem seja contida no espaço definido */
+}
