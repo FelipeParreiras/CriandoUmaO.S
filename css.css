@@ -7,6 +7,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    max-width: 100vw;
+    overflow: hidden;
 }
 
 form {
@@ -14,7 +16,26 @@ form {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 90%; /* Torna a largura responsiva */
+    max-width: 400px; /* Limita a largura máxima */
     display: flex;
     flex-direction: column;
+}
+
+/* Ajustes para resoluções maiores */
+@media screen and (min-width: 1366px) {
+    body {
+        padding: 10px; /* Ajusta o espaçamento para telas maiores */
+    }
+
+    form {
+        width: 40%; /* Ajusta o tamanho do formulário para proporção 1366x768 */
+    }
+}
+
+/* Ajustes para resoluções menores */
+@media screen and (max-width: 768px) {
+    form {
+        width: 90%; /* Ocupa quase toda a largura para telas menores */
+    }
 }
