@@ -44,6 +44,18 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    // Função para capturar o texto do resultado
+    function capturarResultado() {
+        const resultadoInput = document.getElementById("texto-resultado").value.trim();
+        if (resultadoInput) {
+            dados["resultado"] = resultadoInput;
+        } else {
+            dados["resultado"] =
+                "O VEÍCULO ACIMA IDENTIFICADO FOI INSPECIONADO CONFORME DETERMINA A LEGISLAÇÃO DE TRÂNSITO VIGENTE NO PAÍS, SENDO CONSIDERADO APTO PARA TRAFEGAR PELAS VIAS PÚBLICAS.\n\n" +
+                "Encontra-se em adequadas condições de manutenção, preservação, segurança e conservação de suas características técnicas. Veículo não possui avarias na lataria.";
+        }
+    }
+
     // Função para esconder todos os formulários
     function esconderFormularios() {
         forms.forEach((form) => {
@@ -69,6 +81,19 @@ document.addEventListener("DOMContentLoaded", () => {
         return dadosFormulario;
     }
 
+    // Copiar dados do proprietário para o cliente
+    document.getElementById("mesmo-proprietario").addEventListener("change", (event) => {
+        if (event.target.checked) {
+            const proprietarioDados = capturarDadosFormulario(document.getElementById("form-proprietario"));
+            for (const key in proprietarioDados) {
+                const clienteInput = document.getElementById(key.replace("proprietario", "cliente"));
+                if (clienteInput) {
+                    clienteInput.value = proprietarioDados[key];
+                }
+            }
+        }
+    });
+
     // Inicializa com o primeiro formulário
     exibirFormulario(0);
 
@@ -78,12 +103,17 @@ document.addEventListener("DOMContentLoaded", () => {
             event.preventDefault(); // Impede o envio do formulário
 
             if (form.id === "form-imagens") {
+                capturarResultado(); // Captura o texto do resultado
                 capturarImagens(() => {
                     localStorage.setItem("dadosFormularios", JSON.stringify(dados));
-                    // Abre OS.html em uma nova guia
-                    window.open("OS.html", "_blank");
-                    // Redireciona para relatorio.html na guia atual
-                    window.location.href = "relatorio.html";
+
+                    // Abrir páginas em sequência, sem bloqueios
+                    const relatorioWindow = window.open("relatorio.html", "_blank");
+                    window.location.href = "os.html";
+
+                    if (!relatorioWindow) {
+                        alert("Por favor, permita pop-ups no seu navegador para visualizar os documentos!");
+                    }
                 });
             } else {
                 dados[form.id] = capturarDadosFormulario(form);

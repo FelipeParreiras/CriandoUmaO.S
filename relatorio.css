@@ -147,8 +147,8 @@ th, td {
 }
 
 .imagens-veiculo img {
-    max-width: 45%; /* Cada imagem ocupa no máximo 45% da largura */
-    height: auto; /* Mantém a proporção */
+    max-width: 350px; /* Cada imagem ocupa no máximo 45% da largura */
+    height: 300px; /* Mantém a proporção */
     border: 1px solid #ccc; /* Borda ao redor das imagens */
     border-radius: 5px; /* Borda arredondada */
     object-fit: contain; /* Garante que a imagem seja contida no espaço definido */

@@ -79,6 +79,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 imagemTraseira.alt = "Foto da Traseira do Veículo";
             }
         }
+        if (dados.resultado) {
+            document.getElementById("resultado-relatorio").textContent = dados.resultado;
+        }
+        
     } else {
         document.body.innerHTML = "<h1>Nenhum dado encontrado!</h1>";
     }

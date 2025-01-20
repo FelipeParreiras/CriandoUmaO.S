@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("cep-cliente").textContent = dados["form-cliente"]["cep-cliente"];
         document.getElementById("telefone1-cliente").textContent = dados["form-cliente"]["telefone1-cliente"];
         document.getElementById("cartao-cliente").textContent = dados["form-cliente"]["cartao-cliente"];
-
+        document.getElementById("condutor-cliente").textContent = dados["form-cliente"]["condutor"];
         // Data de Emissão
         document.getElementById("data-emissao").textContent = new Date().toLocaleString();
     }
